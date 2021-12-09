@@ -1,0 +1,10 @@
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\bin\Debug\ALGO_Segmentation.exe.config
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\bin\Debug\ALGO_Segmentation.exe
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\bin\Debug\ALGO_Segmentation.pdb
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\obj\Debug\ALGO_Segmentation.csproj.AssemblyReference.cache
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\obj\Debug\ALGO_Segmentation.Form1.resources
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\obj\Debug\ALGO_Segmentation.Properties.Resources.resources
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\obj\Debug\ALGO_Segmentation.csproj.GenerateResource.cache
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\obj\Debug\ALGO_Segmentation.csproj.CoreCompileInputs.cache
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\obj\Debug\ALGO_Segmentation.exe
+E:\2021-2022\System Information Decisionnelle Hospitalier\Clustering Algorithm\ALGO_Segmentation\ALGO_Segmentation\obj\Debug\ALGO_Segmentation.pdb
