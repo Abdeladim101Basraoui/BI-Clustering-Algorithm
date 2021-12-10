@@ -11,5 +11,8 @@ namespace ALGO_Segmentation
         public List<int> ListIndexPoints;
         public double CenterX;
         public double CenterY;
+
+        //public Cluster(List<int> lsint, int centreX, int centerY) => this
+
     }
 }

@@ -36,14 +36,16 @@ namespace ALGO_Segmentation
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Pen pen;
+            Brush b = new SolidBrush(Color.Red);
             pen = new Pen(Color.Red);
-
-            foreach(Point p in ListPoints)
+            Rectangle rect;
+            foreach (Point p in ListPoints)
             {
-                Rectangle rect;
+                
                 rect = new Rectangle(p.X-2, p.Y-2, 4, 4);
 
-                e.Graphics.DrawEllipse(pen, rect);
+                //e.Graphics.DrawEllipse(pen, rect);
+                e.Graphics.FillEllipse(b, rect);
             }
 
             
@@ -62,13 +64,40 @@ namespace ALGO_Segmentation
                 }) ;
             }
             //chercher 
+            double d;
+            double dmin = Double.MaxValue;
+            int imin = 0;
+            int jmin = 0;
              for (int i = 0; i < ListPoints.Count ; i++)
             {
                 for (int j = 0; j < ListPoints.Count; j++)
                 {
-                    Math.Sqrt(Math.Pow(ListPoints[i].X - ListPoints[j].X, 2) - Math.Pow(ListPoints[i].Y - ListPoints[j].Y, 2));
+                    d = Math.Sqrt(Math.Pow(ListPoints[i].X - ListPoints[j].X, 2) - Math.Pow(ListPoints[i].Y - ListPoints[j].Y, 2));
+                    if(d<dmin)
+                    {
+                        dmin = d;
+                        imin = i;
+                        jmin = j;
+                    }
                 }
             }
+             //----------center cluster 1-------//
+            double centerX1 = ListClusters[imin].CenterX;
+            double centerY1 = ListClusters[imin].CenterY;
+            //-----------Center cluster 2------//
+            double centerX2 = ListClusters[jmin].CenterX;
+            double centerY2 = ListClusters[jmin].CenterY;
+            //---------number of point imin in liste clusters------//
+            double N1 = ListClusters[imin].ListIndexPoints.Count;
+            //---------number of point in jmin of the 2nd cluster------//
+            double N2 = ListClusters[jmin].ListIndexPoints.Count;
+            
+            Cluster C = new Cluster();
+            C.ListIndexPoints = new List<int>() { };
+            C.ListIndexPoints.AddRange(ListClusters[imin].ListIndexPoints) ;
+            C.ListIndexPoints.AddRange(ListClusters[jmin].ListIndexPoints) ;
+            //C.CenterX = (center1*N1 +center2*N2)/N1+N2;
+            
         }
     }
 }

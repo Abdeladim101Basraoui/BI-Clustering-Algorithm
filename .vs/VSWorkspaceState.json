@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ALGO_Segmentation",
+    "\\ALGO_Segmentation\\ALGO_Segmentation"
   ],
+  "SelectedNode": "\\ALGO_Segmentation\\ALGO_Segmentation\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
