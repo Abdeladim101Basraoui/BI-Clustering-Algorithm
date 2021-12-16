@@ -96,8 +96,10 @@ namespace ALGO_Segmentation
             C.ListIndexPoints = new List<int>() { };
             C.ListIndexPoints.AddRange(ListClusters[imin].ListIndexPoints) ;
             C.ListIndexPoints.AddRange(ListClusters[jmin].ListIndexPoints) ;
-            //C.CenterX = (center1*N1 +center2*N2)/N1+N2;
-            
+            C.CenterX = (centerX1 * N1 + centerX2 * N2) / (N1 + N2);
+            C.CenterY = (centerY1 * N1 + centerY2 * N2) / (N1 + N2);
+            ListClusters.Add(C);
+
         }
     }
 }
